@@ -20,7 +20,7 @@
 
 .phone {
   float: left;
-  margin: 0 auto;
+  margin: 0 0 0 375px;
 }
 
 .phone li {
@@ -60,7 +60,7 @@ a {
 
 .icons {
   float: right;
-  margin: 0 auto;
+  margin: 0 385px 20px 0;
 }
 
 .icons li {
@@ -107,13 +107,13 @@ a {
 
 .menu {
   float: right;
-  margin: auto;
+  margin: 40px 635px 50px 625px;
 }
 
 .menu li {
   display: inline-block;
   list-style: none;
-  margin-left: 45px;
+  margin-left: 15px;
 }
 
 .menu a {
