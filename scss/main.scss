@@ -18,12 +18,13 @@ $icons-layout: smart;
 }
 .phone{
   float: left;
+  margin: 0 auto;
 }
 .phone li {
   list-style: none;
   display: inline-block;
   margin-left: 30px;
-
+  position: relative;
 }
 a{
   text-decoration: none;
@@ -37,6 +38,9 @@ a{
     width: 11px;
     height: 9px;
     @include icons-sprite(ico-mail);
+    position: absolute;
+    top: 0;
+    left: 0;
 
 
   }
@@ -46,6 +50,53 @@ a{
   width: 7px;
   height: 13px;
   @include icons-sprite(ico-mobile);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
+.icons{
+  float: right;
+  margin: 0 auto;
+}
+.icons li{
+  list-style: none;
+  margin-left:10px ;
+  display: inline-block;
+}
+.icons .facebook{
+  @include icons-sprite(ico-facebook);
+  width: 7px;
+  height: 11px;
+}
+.icons .gplus{
+   @include icons-sprite(ico-gplus);
+   width: 11px;
+   height: 11px;
+ }
+.icons .twitter{
+  @include icons-sprite(icon-twitter);
+  width: 9px;
+  height: 11px;
+}
+.icons .pinterest{
+  @include icons-sprite(ico-pinterest);
+  width: 9px;
+  height: 11px;
+}
+
+.icons .behance{
+  @include icons-sprite(ico-behance);
+  width: 13px;
+  height: 8px;
+}
+.icons .dribbble{
+  @include icons-sprite(ico-dribbble);
+  width: 12px;
+  height: 11px;
+}
+
+
+
 
 
