@@ -2,7 +2,50 @@
 $icons-spacing: 30px;
 $icons-layout: smart;   
 @import "icons/*.png";
- h1 {
-	color: green;
+
+
+.wrapper{
+  min-width: 1920px;
+  font-family: arial, sans-serif;
 }
+.header{
+  height: 153px;
+}
+.contacts{
+  height: 41px;
+  background-color: #f5f7fa;
+
+}
+.phone{
+  float: left;
+}
+.phone li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+
+}
+a{
+  text-decoration: none;
+  color: #506a85;
+  font-size: 12px;
+}
+
+.phone .mail:before {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 9px;
+    @include icons-sprite(ico-mail);
+
+
+  }
+.phone .number:before{
+  content: '';
+  display: block;
+  width: 7px;
+  height: 13px;
+  @include icons-sprite(ico-mobile);
+}
+
 
