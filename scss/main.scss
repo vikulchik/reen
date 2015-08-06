@@ -10,6 +10,7 @@ $icons-layout: smart;
 }
 .header{
   height: 153px;
+  margin: 0;
 }
 .contacts{
   height: 41px;
@@ -39,8 +40,8 @@ a{
     height: 9px;
     @include icons-sprite(ico-mail);
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: -20px;
 
 
   }
@@ -51,8 +52,8 @@ a{
   height: 13px;
   @include icons-sprite(ico-mobile);
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: -15px;
 }
 
 .icons{
@@ -95,8 +96,20 @@ a{
   width: 12px;
   height: 11px;
 }
-
-
-
+.menu{
+  float: right;
+  margin: auto;
+}
+.menu li{
+  display: inline-block;
+  list-style: none;
+  margin-left: 45px;
+}
+.menu a{
+  font-size: 15px;
+  color: #506a85;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
 
