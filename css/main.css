@@ -13,6 +13,11 @@
   margin: 0;
 }
 
+.contacts-inner {
+  width: 80%;
+  margin: auto;
+}
+
 .contacts {
   height: 41px;
   background-color: #f5f7fa;
@@ -20,7 +25,6 @@
 
 .phone {
   float: left;
-  margin: 0 0 0 375px;
 }
 
 .phone li {
@@ -60,12 +64,11 @@ a {
 
 .icons {
   float: right;
-  margin: 0 385px 20px 0;
 }
 
 .icons li {
   list-style: none;
-  margin-left: 10px;
+  margin-right: 30px;
   display: inline-block;
 }
 
@@ -105,9 +108,17 @@ a {
   height: 11px;
 }
 
+.header-img {
+  float: left;
+}
+
+.menu-inner {
+  width: 80%;
+  margin: auto;
+}
+
 .menu {
-  float: right;
-  margin: 40px 635px 50px 625px;
+  float: left;
 }
 
 .menu li {
