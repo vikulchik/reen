@@ -1,4 +1,4 @@
-.icons-sprite, .phone .mail:before, .phone .number:before, .icons .facebook, .icons .gplus, .icons .twitter, .icons .pinterest, .icons .behance, .icons .dribbble {
+.icons-sprite, .phone .mail:before, .phone .number:before, .icons .facebook, .icons .gplus, .icons .twitter, .icons .pinterest, .icons .behance, .icons .dribbble, .header-find:after {
   background-image: url('../img/icons-s7740070f82.png');
   background-repeat: no-repeat;
 }
@@ -14,13 +14,13 @@
 }
 
 .contacts-inner {
-  width: 80%;
-  margin: auto;
+  height: 41px;
+  background-color: #f5f7fa;
 }
 
 .contacts {
-  height: 41px;
-  background-color: #f5f7fa;
+  width: 80%;
+  margin: auto;
 }
 
 .phone {
@@ -110,6 +110,8 @@ a {
 
 .header-img {
   float: left;
+  margin-top: 35px;
+  margin-left: -230px;
 }
 
 .menu-inner {
@@ -119,6 +121,7 @@ a {
 
 .menu {
   float: left;
+  margin-top: 55px;
 }
 
 .menu li {
@@ -132,4 +135,27 @@ a {
   color: #506a85;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header-find {
+  float: right;
+  position: relative;
+  margin-top: 55px;
+}
+
+.header-find:after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-position: -23px 0;
+  position: absolute;
+  top: 4px;
+  right: 7px;
 }

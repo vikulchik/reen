@@ -13,12 +13,13 @@ $icons-layout: smart;
   margin: 0;
 }
 .contacts-inner{
-  width:80%;
-  margin: auto;
-}
-.contacts{
   height: 41px;
   background-color: #f5f7fa;
+
+}
+.contacts{
+  width:80%;
+  margin: auto;
 
 }
 .phone{
@@ -99,8 +100,9 @@ a{
   height: 11px;
 }
 .header-img{
-  float: left
-
+  float: left;
+  margin-top: 35px;
+  margin-left: -230px;
 }
 .menu-inner{
   width: 80%;
@@ -109,7 +111,7 @@ a{
 
 .menu{
   float: left;
-
+  margin-top: 55px;
 
 }
 .menu li{
@@ -122,6 +124,28 @@ a{
   color: #506a85;
   font-weight: bold;
   text-transform: uppercase;
+}
+.clear {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.header-find{
+  float: right;
+  position: relative;
+  margin-top: 55px;
+}
+.header-find:after{
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  @include icons-sprite(ico-search);
+  position: absolute;
+  top: 4px;
+  right: 7px;
 }
 
 
