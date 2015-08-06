@@ -1,0 +1,27 @@
+.icons-sprite, ul li:first-child, ul li:nth-child(2) {
+  background-image: url('../img/icons-sfa037ca676.png');
+  background-repeat: no-repeat;
+}
+
+app {
+  max-width: 1920px;
+  margin: 0 auto;
+  border-radius: 5px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+ul li {
+  width: 280px;
+  height: 200px;
+  border: 1px solid red;
+  display: inline-block;
+  margin-left: 10px;
+}
+ul li:first-child {
+  background-position: -1016px 0;
+}
+ul li:nth-child(2) {
+  background-position: -1966px 0;
+}
