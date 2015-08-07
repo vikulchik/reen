@@ -1,10 +1,66 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
 .icons-sprite, .phone .mail:before, .phone .number:before, .icons .facebook, .icons .gplus, .icons .twitter, .icons .pinterest, .icons .behance, .icons .dribbble, .header-find:after {
   background-image: url('../img/icons-s7740070f82.png');
   background-repeat: no-repeat;
 }
 
 .wrapper {
-  min-width: 1920px;
+  max-width: 1920px;
   font-family: arial, sans-serif;
 }
 
@@ -108,10 +164,10 @@ a {
   height: 11px;
 }
 
-.header-img {
+.header-logo {
   float: left;
-  margin-top: 35px;
-  margin-left: -230px;
+  margin-top: 40px;
+  margin-left: 10px;
 }
 
 .menu-inner {
@@ -122,12 +178,15 @@ a {
 .menu {
   float: left;
   margin-top: 55px;
+  position: relative;
+  margin-left: 90px;
 }
 
 .menu li {
   display: inline-block;
   list-style: none;
-  margin-left: 15px;
+  margin-left: 45px;
+  position: relative;
 }
 
 .menu a {
@@ -135,6 +194,30 @@ a {
   color: #506a85;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.menu .submenu {
+  display: none;
+  position: absolute;
+  width: 133px;
+  height: 100px;
+  top: 17px;
+  left: -24px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu .submenu > li > a {
+  display: block;
+  padding: 5px 10px;
+}
+
+.menu > li:hover .submenu {
+  display: block;
+}
+
+.submenu:hover {
+  display: block;
 }
 
 .clear:after {
@@ -157,5 +240,12 @@ a {
   background-position: -23px 0;
   position: absolute;
   top: 4px;
-  right: 7px;
+  right: 1px;
+}
+
+.header-find .submit {
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
 }
