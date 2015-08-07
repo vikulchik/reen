@@ -54,8 +54,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-.icons-sprite, .phone .mail:before, .phone .number:before, .icons .facebook, .icons .gplus, .icons .twitter, .icons .pinterest, .icons .behance, .icons .dribbble, .header-find .header-find:after, .content-info .latest-works .content-passion:before {
-  background-image: url('../img/icons-s7740070f82.png');
+.icons-sprite, .phone .mail:before, .phone .number:before, .icons .facebook, .icons .gplus, .icons .twitter, .icons .pinterest, .icons .behance, .icons .dribbble, .header-find:after, .content-info .latest-works .content-passion:before .icons-ico-heart, .content-info .latest-works .content-creativity:before .icons-ico-lamp, .content-info .latest-works .content-quality:before .icons-ico-star {
+  background-image: url('../img/icons-s1f1153e006.png');
   background-repeat: no-repeat;
 }
 
@@ -229,7 +229,16 @@ a {
   position: relative;
   margin-top: 55px;
 }
-.header-find .header-find:after {
+.header-find .submit {
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.header-find:after {
   content: '';
   display: block;
   width: 12px;
@@ -238,14 +247,6 @@ a {
   position: absolute;
   top: 4px;
   right: 1px;
-}
-.header-find .submit {
-  opacity: 0;
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
 }
 
 .header-find:after {
@@ -335,8 +336,37 @@ a {
   font-size: 16px;
   line-height: 1.5;
 }
+.content-info .latest-works .content-passion {
+  margin-left: 0;
+}
+.content-info .latest-works .content-passion, .content-info .latest-works .content-creativity, .content-info .latest-works .content-quality {
+  position: relative;
+}
+.content-info .latest-works .content-passion:before, .content-info .latest-works .content-creativity:before, .content-info .latest-works .content-quality:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 66px;
+  height: 55px;
+}
 .content-info .latest-works .content-passion:before {
+  top: 0;
+  left: 0;
+}
+.content-info .latest-works .content-passion:before .icons-ico-heart {
   background-position: 0 -24px;
-  width: 61px;
-  height: 53px;
+}
+.content-info .latest-works .content-creativity:before {
+  top: 0;
+  left: 0;
+}
+.content-info .latest-works .content-creativity:before .icons-ico-lamp {
+  background-position: 0 -130px;
+}
+.content-info .latest-works .content-quality:before {
+  top: 0;
+  left: 0;
+}
+.content-info .latest-works .content-quality:before .icons-ico-star {
+  background-position: 0 -77px;
 }

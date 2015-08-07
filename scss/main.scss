@@ -176,16 +176,6 @@ a {
   position: relative;
   margin-top: 55px;
 
-  .header-find:after {
-    content: '';
-    display: block;
-    width: 12px;
-    height: 12px;
-    @include icons-sprite(ico-search);
-    position: absolute;
-    top: 4px;
-    right: 1px;
-  }
   .submit {
     opacity: 0;
     width: 15px;
@@ -194,6 +184,16 @@ a {
     position: relative;
     z-index: 2;
   }
+}
+.header-find:after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  @include icons-sprite(ico-search);
+  position: absolute;
+  top: 4px;
+  right: 1px;
 }
 
 .header-find:after {
@@ -269,27 +269,61 @@ a {
     width: 70%;
     margin: auto;
 
-    .content-passion, .content-creativity, .content-quality {
-      width: 20%;
-      margin-left: 130px;
-      display: inline-block;
-      margin-top: 80px;
-      h3 {
-        font-size: 26px;
-        color: #506a85;
+    .content {
+      &-passion, &-creativity, &-quality {
+        width: 20%;
+        margin-left: 130px;
         display: inline-block;
-        margin-bottom: 30px;
-      }
-      p {
-        color: #73879c;
-        font-size: 16px;
-        line-height: 1.5;
+        margin-top: 80px;
+
+        h3 {
+          font-size: 26px;
+          color: #506a85;
+          display: inline-block;
+          margin-bottom: 30px;
+        }
+        p {
+          color: #73879c;
+          font-size: 16px;
+          line-height: 1.5;
+        }
       }
     }
-    .content-passion:before{
-      @include icons-sprite(ico-heart);
-      width: 61px;
-      height: 53px;
+    .content-passion{
+      margin-left: 0;
+    }
+    .content {
+      &-passion, &-creativity, &-quality {
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 66px;
+          height: 55px;
+        }
+      }
+      &-passion {
+        &:before {
+          @include icons-sprites(ico-heart);
+          top: 0;
+          left:0;
+        }
+      }
+      &-creativity {
+        &:before {
+          @include icons-sprites(ico-lamp);
+          top: 0;
+          left:0;
+        }
+      }
+      &-quality {
+        &:before {
+          @include icons-sprites(ico-star);
+          top: 0;
+          left:0;
+        }
+      }
     }
   }
 }
