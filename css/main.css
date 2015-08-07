@@ -54,7 +54,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-.icons-sprite, .phone .mail:before, .phone .number:before, .icons .facebook, .icons .gplus, .icons .twitter, .icons .pinterest, .icons .behance, .icons .dribbble, .header-find .header-find:after {
+.icons-sprite, .phone .mail:before, .phone .number:before, .icons .facebook, .icons .gplus, .icons .twitter, .icons .pinterest, .icons .behance, .icons .dribbble, .header-find .header-find:after, .content-info .latest-works .content-passion:before {
   background-image: url('../img/icons-s7740070f82.png');
   background-repeat: no-repeat;
 }
@@ -291,4 +291,52 @@ a {
   background-color: #027864;
   color: white;
   border: 1px solid #027864;
+}
+
+.content-info {
+  height: 673px;
+}
+.content-info .main-info {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.content-info .main-info h2 {
+  display: inline-block;
+  margin-top: 131px;
+  font-size: 44px;
+  color: #506a85;
+}
+.content-info .main-info p {
+  color: #73879c;
+  font-size: 22px;
+  line-height: 2;
+  display: inline-block;
+  margin-top: 35px;
+}
+.content-info .latest-works {
+  width: 70%;
+  margin: auto;
+}
+.content-info .latest-works .content-passion, .content-info .latest-works .content-creativity, .content-info .latest-works .content-quality {
+  width: 20%;
+  margin-left: 130px;
+  display: inline-block;
+  margin-top: 80px;
+}
+.content-info .latest-works .content-passion h3, .content-info .latest-works .content-creativity h3, .content-info .latest-works .content-quality h3 {
+  font-size: 26px;
+  color: #506a85;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.content-info .latest-works .content-passion p, .content-info .latest-works .content-creativity p, .content-info .latest-works .content-quality p {
+  color: #73879c;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.content-info .latest-works .content-passion:before {
+  background-position: 0 -24px;
+  width: 61px;
+  height: 53px;
 }

@@ -244,3 +244,54 @@ a {
     }
   }
 }
+.content-info {
+  height: 673px;
+
+  .main-info {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    h2 {
+      display: inline-block;
+      margin-top: 131px;
+      font-size: 44px;
+      color: #506a85;
+    }
+    p {
+      color: #73879c;
+      font-size: 22px;
+      line-height: 2;
+      display: inline-block;
+      margin-top: 35px;
+    }
+  }
+  .latest-works {
+    width: 70%;
+    margin: auto;
+
+    .content-passion, .content-creativity, .content-quality {
+      width: 20%;
+      margin-left: 130px;
+      display: inline-block;
+      margin-top: 80px;
+      h3 {
+        font-size: 26px;
+        color: #506a85;
+        display: inline-block;
+        margin-bottom: 30px;
+      }
+      p {
+        color: #73879c;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+    .content-passion:before{
+      @include icons-sprite(ico-heart);
+      width: 61px;
+      height: 53px;
+    }
+  }
+}
+
+
