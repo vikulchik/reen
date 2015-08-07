@@ -54,7 +54,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-.icons-sprite, .phone .mail:before, .phone .number:before, .icons .facebook, .icons .gplus, .icons .twitter, .icons .pinterest, .icons .behance, .icons .dribbble, .header-find:after {
+.icons-sprite, .phone .mail:before, .phone .number:before, .icons .facebook, .icons .gplus, .icons .twitter, .icons .pinterest, .icons .behance, .icons .dribbble, .header-find .header-find:after {
   background-image: url('../img/icons-s7740070f82.png');
   background-repeat: no-repeat;
 }
@@ -83,7 +83,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .phone {
   float: left;
 }
-
 .phone li {
   list-style: none;
   display: inline-block;
@@ -122,43 +121,36 @@ a {
 .icons {
   float: right;
 }
-
 .icons li {
   list-style: none;
   margin-right: 30px;
   display: inline-block;
 }
-
 .icons .facebook {
   background-position: -9px 0;
   width: 7px;
   height: 11px;
 }
-
 .icons .gplus {
   background-position: -47px -13px;
   width: 11px;
   height: 11px;
 }
-
 .icons .twitter {
   background-position: -24px -13px;
   width: 9px;
   height: 11px;
 }
-
 .icons .pinterest {
   background-position: 0 0;
   width: 9px;
   height: 11px;
 }
-
 .icons .behance {
   background-position: 0 -13px;
   width: 13px;
   height: 8px;
 }
-
 .icons .dribbble {
   background-position: -35px -13px;
   width: 12px;
@@ -184,21 +176,18 @@ a {
   position: relative;
   margin-left: 7%;
 }
-
 .menu li {
   display: inline-block;
   list-style: none;
   margin-left: 45px;
   position: relative;
 }
-
 .menu a {
   font-size: 15px;
   color: #506a85;
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .menu .submenu {
   display: none;
   position: absolute;
@@ -211,14 +200,12 @@ a {
   background-color: #cacaca;
   border: 2px solid #506a85;
 }
-
 .menu .submenu li a {
   display: block;
   padding: 8px 0;
   color: #0088CC;
   text-decoration: none;
 }
-
 .menu .submenu li a:hover {
   color: white;
 }
@@ -242,8 +229,7 @@ a {
   position: relative;
   margin-top: 55px;
 }
-
-.header-find:after {
+.header-find .header-find:after {
   content: '';
   display: block;
   width: 12px;
@@ -253,7 +239,6 @@ a {
   top: 4px;
   right: 1px;
 }
-
 .header-find .submit {
   opacity: 0;
   width: 15px;
@@ -273,29 +258,25 @@ a {
   background: url("/img/img-content.jpg") no-repeat 0 0;
   position: relative;
 }
-
-.content {
+.main-content .content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
-.content h1 {
+.main-content .content h1 {
   color: white;
   font-size: 78px;
   text-transform: uppercase;
 }
-
-.content p {
+.main-content .content p {
   color: #a3b1bf;
   font-size: 24px;
   line-height: 1.5;
   margin-top: 40px;
 }
-
-.content .button {
+.main-content .content .button {
   display: inline-block;
   color: white;
   font-size: 18px;
@@ -306,8 +287,7 @@ a {
   background-color: #00bc9c;
   padding: 25px 70px;
 }
-
-.content .button:hover {
+.main-content .content .button:hover {
   background-color: #027864;
   color: white;
   border: 1px solid #027864;
