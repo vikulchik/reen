@@ -435,6 +435,113 @@ a {
     }
   }
 }
+.information {
+  height: 485px;
+  position: relative;
+  .information-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    h2 {
+      color: #506a85;
+      font-size: 44px;
+      display: inline-block;
+      margin-bottom: 40px;
+    }
+    p {
+      color: #73879c;
+      font-size: 22px;
+      line-height: 2;
+      display: inline-block;
+      margin-bottom: 50px;
+    }
+    .button-info {
+       display: inline-block;
+       color: white;
+       font-size: 18px;
+       text-transform: uppercase;
+       border-radius: 3px;
+       border: 1px solid #00bc9c;
+       background-color: #00bc9c;
+       padding: 20px 25px;
+       &:hover {
+         background-color: #027864;
+         color: white;
+         border: 1px solid #027864;
+       }
+     }
+  }
+ }
+.footer {
+ height: 449px;
+
+  .footer-info {
+    height: 366px;
+    background-color: #2f4052;
+    h4 {
+      text-transform: uppercase;
+      font-size: 16px;
+      color: white;
+      display: block;
+      margin-bottom: 30px;
+    }
+    p, a {
+      color: #a3b1bf;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .reen {
+      width: 80%;
+      margin: auto;
+      .footer-logo, .footer-latest-works, .footer-touch, .footer-updates {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 75px;
+      }
+      .footer-logo {
+        margin-left: 0;
+        width: 20%;
+        img {
+          display: inline-block;
+          margin-bottom: 25px;
+        }
+        }
+      }
+    }
+
+
+  .footer-menu {
+    background-color: #283645;
+    height: 83px;
+    .footer-contact {
+      width: 80%;
+      margin: auto;
+      .footer-nav {
+        float: right;
+        margin-top: 35px;
+        li {
+          display: inline-block;
+          padding-left: 25px;
+        }
+        a {
+          color: #707e8c;
+          font-size: 14px;
+        }
+      }
+      .copyright {
+        p {
+          color: #707e8c;
+          font-size: 14px;
+          display: inline-block;
+          margin-top: 35px;
+        }
+      }
+    }
+  }
+}
+
 
 
 

@@ -55,7 +55,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .icons-sprite, .phone .mail:before, .phone .number:before, .icons .facebook, .icons .gplus, .icons .twitter, .icons .pinterest, .icons .behance, .icons .dribbble, .header-find:after, .content-info .latest-works .content-passion:before, .content-info .latest-works .content-creativity:before, .content-info .latest-works .content-quality:before {
-  background-image: url('../img/icons-s358d6c5c27.png');
+  background-image: url('../img/icons-sfc375ca0ad.png');
   background-repeat: no-repeat;
 }
 
@@ -93,7 +93,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
   width: 11px;
   height: 9px;
-  background-position: -13px -13px;
+  background-position: -10px -13px;
   position: absolute;
   top: 5px;
   left: -20px;
@@ -103,7 +103,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
   width: 7px;
   height: 13px;
-  background-position: -35px 0;
+  background-position: -46px 0;
   position: absolute;
   top: 2px;
   left: -15px;
@@ -125,32 +125,32 @@ a {
   display: inline-block;
 }
 .icons .facebook {
-  background-position: -9px 0;
+  background-position: -20px 0;
   width: 7px;
   height: 11px;
 }
 .icons .gplus {
-  background-position: -47px -13px;
+  background-position: 0 0;
   width: 11px;
   height: 11px;
 }
 .icons .twitter {
-  background-position: -24px -13px;
+  background-position: -21px -13px;
   width: 9px;
   height: 11px;
 }
 .icons .pinterest {
-  background-position: 0 0;
+  background-position: -11px 0;
   width: 9px;
   height: 11px;
 }
 .icons .behance {
-  background-position: 0 -13px;
+  background-position: -46px -130px;
   width: 13px;
   height: 8px;
 }
 .icons .dribbble {
-  background-position: -35px -13px;
+  background-position: -32px -13px;
   width: 12px;
   height: 11px;
 }
@@ -237,7 +237,7 @@ a {
   display: block;
   width: 12px;
   height: 12px;
-  background-position: -23px 0;
+  background-position: -34px 0;
   position: absolute;
   top: 4px;
   right: 1px;
@@ -449,4 +449,107 @@ a {
   height: 15px;
   display: inline-block;
   margin-left: 10px;
+}
+
+.information {
+  height: 485px;
+  position: relative;
+}
+.information .information-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.information .information-content h2 {
+  color: #506a85;
+  font-size: 44px;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.information .information-content p {
+  color: #73879c;
+  font-size: 22px;
+  line-height: 2;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.information .information-content .button-info {
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 1px solid #00bc9c;
+  background-color: #00bc9c;
+  padding: 20px 25px;
+}
+.information .information-content .button-info:hover {
+  background-color: #027864;
+  color: white;
+  border: 1px solid #027864;
+}
+
+.footer {
+  height: 449px;
+}
+.footer .footer-info {
+  height: 366px;
+  background-color: #2f4052;
+}
+.footer .footer-info h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+  display: block;
+  margin-bottom: 30px;
+}
+.footer .footer-info p, .footer .footer-info a {
+  color: #a3b1bf;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.footer .footer-info .reen {
+  width: 80%;
+  margin: auto;
+}
+.footer .footer-info .reen .footer-logo, .footer .footer-info .reen .footer-latest-works, .footer .footer-info .reen .footer-touch, .footer .footer-info .reen .footer-updates {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 75px;
+}
+.footer .footer-info .reen .footer-logo {
+  margin-left: 0;
+  width: 20%;
+}
+.footer .footer-info .reen .footer-logo img {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+.footer .footer-menu {
+  background-color: #283645;
+  height: 83px;
+}
+.footer .footer-menu .footer-contact {
+  width: 80%;
+  margin: auto;
+}
+.footer .footer-menu .footer-contact .footer-nav {
+  float: right;
+  margin-top: 35px;
+}
+.footer .footer-menu .footer-contact .footer-nav li {
+  display: inline-block;
+  padding-left: 25px;
+}
+.footer .footer-menu .footer-contact .footer-nav a {
+  color: #707e8c;
+  font-size: 14px;
+}
+.footer .footer-menu .footer-contact .copyright p {
+  color: #707e8c;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 35px;
 }
