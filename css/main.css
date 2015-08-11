@@ -54,8 +54,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-.icons-sprite, .phone .mail:before, .phone .number:before, .icons .facebook, .icons .gplus, .icons .twitter, .icons .pinterest, .icons .behance, .icons .dribbble, .header-find:after, .content-info .latest-works .content-passion:before, .content-info .latest-works .content-creativity:before, .content-info .latest-works .content-quality:before {
-  background-image: url('../img/icons-sfc375ca0ad.png');
+.icons-sprite, .phone .mail:before, .phone .number:before, .icons .facebook, .icons .gplus, .icons .twitter, .icons .pinterest, .icons .behance, .icons .dribbble, .header-find:after, .content-info .latest-works .content-passion:before, .content-info .latest-works .content-creativity:before, .content-info .latest-works .content-quality:before, .footer .footer-info .reen .footer-logo .data:after, .footer .footer-info .reen .footer-touch .search:before, .footer .footer-info .reen .footer-touch .mobile:before, .footer .footer-info .reen .footer-touch .mailto:before {
+  background-image: url('../img/icons-s025d27e847.png');
   background-repeat: no-repeat;
 }
 
@@ -491,11 +491,7 @@ a {
   border: 1px solid #027864;
 }
 
-.footer {
-  height: 449px;
-}
 .footer .footer-info {
-  height: 366px;
   background-color: #2f4052;
 }
 .footer .footer-info h4 {
@@ -513,11 +509,12 @@ a {
 .footer .footer-info .reen {
   width: 80%;
   margin: auto;
+  padding: 45px;
 }
 .footer .footer-info .reen .footer-logo, .footer .footer-info .reen .footer-latest-works, .footer .footer-info .reen .footer-touch, .footer .footer-info .reen .footer-updates {
   display: inline-block;
   vertical-align: top;
-  margin-top: 75px;
+  margin-left: 80px;
 }
 .footer .footer-info .reen .footer-logo {
   margin-left: 0;
@@ -526,6 +523,110 @@ a {
 .footer .footer-info .reen .footer-logo img {
   display: inline-block;
   margin-bottom: 25px;
+}
+.footer .footer-info .reen .footer-logo p {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.footer .footer-info .reen .footer-logo .data {
+  font-weight: bold;
+  position: relative;
+}
+.footer .footer-info .reen .footer-logo .data:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 8px;
+  background-position: 0 -13px;
+  top: 4px;
+  left: 103px;
+}
+.footer .footer-info .reen .footer-latest-works {
+  width: 20%;
+}
+.footer .footer-info .reen .footer-touch {
+  width: 20%;
+}
+.footer .footer-info .reen .footer-touch p {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+.footer .footer-info .reen .footer-touch ul {
+  margin-left: 15px;
+}
+.footer .footer-info .reen .footer-touch .search {
+  display: inline-block;
+  margin-bottom: 10px;
+  position: relative;
+}
+.footer .footer-info .reen .footer-touch .search:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 7px;
+  height: 12px;
+  background-position: -27px 0;
+  top: 4px;
+  left: -12px;
+}
+.footer .footer-info .reen .footer-touch .mobile {
+  display: inline-block;
+  margin-bottom: 10px;
+  position: relative;
+}
+.footer .footer-info .reen .footer-touch .mobile:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 7px;
+  height: 12px;
+  background-position: -46px 0;
+  top: 4px;
+  left: -12px;
+}
+.footer .footer-info .reen .footer-touch .mailto {
+  position: relative;
+}
+.footer .footer-info .reen .footer-touch .mailto:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 11px;
+  height: 9px;
+  background-position: -10px -13px;
+  top: 6px;
+  left: -14px;
+}
+.footer .footer-info .reen .footer-updates {
+  width: 18%;
+}
+.footer .footer-info .reen .footer-updates p {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+.footer .footer-info .reen .footer-updates .footer-subscribe {
+  position: relative;
+}
+.footer .footer-info .reen .footer-updates .footer-subscribe .email {
+  background-color: #4e5c6c;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #4e5c6c;
+  border-radius: 3px;
+}
+.footer .footer-info .reen .footer-updates .footer-subscribe .submit {
+  position: absolute;
+  display: inline-block;
+  background-color: #00bc9c;
+  color: white;
+  border: 1px solid #4e5c6c;
+  border-radius: 3px;
+  padding: 10px;
+  top: 4px;
+  right: 0;
+  cursor: pointer;
 }
 .footer .footer-menu {
   background-color: #283645;

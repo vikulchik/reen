@@ -475,10 +475,7 @@ a {
   }
  }
 .footer {
- height: 449px;
-
   .footer-info {
-    height: 366px;
     background-color: #2f4052;
     h4 {
       text-transform: uppercase;
@@ -495,10 +492,11 @@ a {
     .reen {
       width: 80%;
       margin: auto;
+      padding: 45px;
       .footer-logo, .footer-latest-works, .footer-touch, .footer-updates {
         display: inline-block;
         vertical-align: top;
-        margin-top: 75px;
+        margin-left: 80px;
       }
       .footer-logo {
         margin-left: 0;
@@ -507,9 +505,116 @@ a {
           display: inline-block;
           margin-bottom: 25px;
         }
+        p {
+          display: inline-block;
+          margin-bottom: 30px;
+        }
+        .data {
+          font-weight: bold;
+          position: relative;
+            &:after {
+              content: '';
+              position: absolute;
+              display: block;
+              width: 10px;
+              height: 8px;
+              @include icons-sprite(icon-right);
+              top: 4px;
+              left: 103px;
+            }
+        }
+      }
+      .footer-latest-works {
+        width: 20%;
+      }
+      .footer-touch {
+        width: 20%;
+        p {
+          display: inline-block;
+          margin-bottom: 25px;
+        }
+        ul {
+          margin-left: 15px;
+        }
+        .search {
+          display: inline-block;
+          margin-bottom: 10px;
+          position: relative;
+            &:before {
+              content: '';
+              position: absolute;
+              display: block;
+              width: 7px;
+              height: 12px;
+              @include icons-sprite(ico-location);
+              top: 4px;
+              left: -12px;
+            }
+        }
+        .mobile {
+          display: inline-block;
+          margin-bottom: 10px;
+          position: relative;
+          &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 7px;
+            height: 12px;
+            @include icons-sprite(ico-mobile);
+            top: 4px;
+            left: -12px;
+          }
+        }
+        .mailto {
+          position: relative;
+          &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 11px;
+            height: 9px;
+            @include icons-sprite(ico-mail);
+            top: 6px;
+            left: -14px;
+          }
+        }
+      }
+      .footer-updates {
+        width: 18%;
+        p {
+          display: inline-block;
+          margin-bottom: 25px;
+        }
+        .footer-subscribe {
+          position: relative;
+          .email {
+            background-color: #4e5c6c;
+            display: block;
+            width: 100%;
+            height: 40px;
+            border: 1px solid #4e5c6c;
+            border-radius: 3px;
+          }
+          .submit {
+            position: absolute;
+            display: inline-block;
+            background-color: #00bc9c;
+            color: white;
+            border: 1px solid #4e5c6c;
+            border-radius: 3px;
+            padding: 10px;
+            top: 4px;
+            right: 0;
+            cursor: pointer;
+          }
         }
       }
     }
+  }
+
+
+
 
 
   .footer-menu {
