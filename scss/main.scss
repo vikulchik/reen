@@ -1,7 +1,7 @@
 @import 'compass';
 @import "compass/reset";
 
-$icons-spacing: 30px;
+/*$icons-spacing: 30px;*/
 $icons-layout: smart;
 @import "icons/*.png";
 
@@ -215,7 +215,7 @@ a {
 }
 
 .main-content {
-  height: 882px;
+  min-height: 882px;
   margin-top: 35px;
   background: url("/img/img-content.jpg") no-repeat 0 0;
   position: relative;
@@ -260,7 +260,7 @@ a {
 }
 
 .content-info {
-  height: 673px;
+  padding-bottom: 15px;
 
   .main-info {
     width: 50%;
@@ -330,6 +330,7 @@ a {
           top: 0;
           left: -75px;
           height: 67px;
+          width: 46px;
         }
       }
       &-quality {
@@ -409,28 +410,6 @@ a {
         &:first-child {
           margin-left: 0;
         }
-      }
-    }
-    .dots {
-      width: 10%;
-      margin: auto;
-      .control-dots {
-        border: 1px solid #506a85;
-        border-radius: 20px;
-        background-color: #506a85;
-        width: 15px;
-        height: 15px;
-        display: inline-block;
-        margin-left: 10px;
-      }
-      .active {
-        border: 1px solid #00bc9c;
-        border-radius: 20px;
-        background-color: #00bc9c;
-        width: 15px;
-        height: 15px;
-        display: inline-block;
-        margin-left: 10px;
       }
     }
   }
@@ -540,6 +519,8 @@ a {
           display: inline-block;
           margin-bottom: 10px;
           position: relative;
+          color: #a3b1bf;
+          font-size: 14px;
             &:before {
               content: '';
               position: absolute;
@@ -591,10 +572,15 @@ a {
           .email {
             background-color: #4e5c6c;
             display: block;
-            width: 100%;
+            width: 157px;
             height: 40px;
             border: 1px solid #4e5c6c;
             border-radius: 3px;
+            padding-right: 100px;
+            padding-left: 10px;
+            color: #828e99;
+            text-transform: capitalize;
+            font-size: 14px;
           }
           .submit {
             position: absolute;
@@ -628,7 +614,7 @@ a {
         margin-top: 35px;
         li {
           display: inline-block;
-          padding-left: 25px;
+          margin-left: 25px;
         }
         a {
           color: #707e8c;
@@ -636,6 +622,7 @@ a {
         }
       }
       .copyright {
+        float: left;
         p {
           color: #707e8c;
           font-size: 14px;
@@ -644,6 +631,18 @@ a {
         }
       }
     }
+  }
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  border-radius: 20px;
+  background-color: #506a85;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-left: 10px;
+  &.active {
+    background-color: #00bc9c;
   }
 }
 
