@@ -11,7 +11,7 @@ $icons-layout: smart;
 }
 
 .header {
-  height: 153px;
+  padding-bottom: 15px;
   margin: 0;
 }
 
@@ -20,7 +20,7 @@ $icons-layout: smart;
   margin: auto;
   padding-top: 10px;
   &-inner {
-    height: 41px;
+    padding-bottom: 15px;
     background-color: #f5f7fa;
 
   }
@@ -424,7 +424,7 @@ a {
   }
 }
 .information {
-  height: 485px;
+  min-height: 485px;
   position: relative;
   .information-content {
     position: absolute;
