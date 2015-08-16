@@ -55,9 +55,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*$icons-spacing: 30px;*/
-.icons-sprite, .phone .mail:before, .phone .number:before, .icons .facebook, .icons .gplus, .icons .twitter, .icons .pinterest, .icons .behance, .icons .dribbble, .header-find:after, .content-info .latest-works .content-passion:before, .content-info .latest-works .content-creativity:before, .content-info .latest-works .content-quality:before, .footer .footer-info .reen .footer-logo .data:after, .footer .footer-info .reen .footer-touch .search:before, .footer .footer-info .reen .footer-touch .mobile:before, .footer .footer-info .reen .footer-touch .mailto:before {
+.icons-sprite, .phone .mail:before, .phone .number:before, .icons .facebook a, .icons .gplus a, .icons .twitter a, .icons .pinterest a, .icons .behance a, .icons .dribbble a, .header-find:after, .content-info .latest-works .content-passion:before, .content-info .latest-works .content-creativity:before, .content-info .latest-works .content-quality:before, .footer .footer-info .reen .footer-logo .data:after, .footer .footer-info .reen .footer-touch .search:before, .footer .footer-info .reen .footer-touch .mobile:before, .footer .footer-info .reen .footer-touch .mailto:before {
   background-image: url('../img/icons-sf7875a0d34.png');
   background-repeat: no-repeat;
+}
+
+.hide {
+  display: none !important;
 }
 
 .wrapper {
@@ -118,42 +122,38 @@ a {
 
 .icons {
   float: right;
-  cursor: pointer;
 }
 .icons li {
   list-style: none;
   margin-right: 30px;
   display: inline-block;
 }
-.icons .facebook {
+.icons li a {
+  width: 9px;
+  height: 11px;
+  display: inline-block;
+}
+.icons .facebook a {
   background-position: -20px 0;
   width: 7px;
-  height: 11px;
 }
-.icons .gplus {
+.icons .gplus a {
   background-position: 0 0;
-  width: 11px;
-  height: 11px;
+  width: 10px;
 }
-.icons .twitter {
+.icons .twitter a {
   background-position: -21px -13px;
-  width: 9px;
-  height: 11px;
 }
-.icons .pinterest {
+.icons .pinterest a {
   background-position: -11px 0;
-  width: 9px;
-  height: 11px;
 }
-.icons .behance {
+.icons .behance a {
   background-position: -46px -130px;
-  width: 13px;
-  height: 8px;
+  width: 14px;
 }
-.icons .dribbble {
+.icons .dribbble a {
   background-position: -32px -13px;
   width: 12px;
-  height: 11px;
 }
 
 .header-logo {
@@ -181,39 +181,14 @@ a {
   margin-left: 45px;
   position: relative;
 }
-.menu li:first-child {
+.menu > li:first-child {
   margin-left: 0;
-}
-.menu > li:hover .submenu {
-  display: block;
 }
 .menu a {
   font-size: 15px;
   color: #506a85;
   font-weight: bold;
   text-transform: uppercase;
-}
-.menu .submenu {
-  display: none;
-  position: absolute;
-  width: 155px;
-  height: 130px;
-  top: 17px;
-  left: -50px;
-  padding: 0;
-  margin: 0;
-  background-color: #cacaca;
-  border: 2px solid #506a85;
-  z-index: 2;
-}
-.menu .submenu li a {
-  display: block;
-  padding: 8px 0;
-  color: #0088CC;
-  text-decoration: none;
-}
-.menu .submenu li a:hover {
-  color: white;
 }
 
 .clear:after {
@@ -668,11 +643,13 @@ a {
 }
 
 @media screen and (max-width: 1585px) {
-  .menu {
-    margin-left: 2%;
-  }
   .menu li {
     margin-left: 20px;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .menu {
+    margin-left: 3%;
   }
 }
 @media screen and (max-width: 960px) {
@@ -1163,12 +1140,17 @@ a {
     width: 80%;
   }
 }
+@media screen and (max-width: 808px) {
+  .footer .footer-menu .footer-contact {
+    width: 85%;
+  }
+}
 @media screen and (max-width: 792px) {
   .footer .footer-menu .footer-contact {
     width: 90%;
   }
 }
-@media screen and (max-width: 713px) {
+@media screen and (max-width: 725px) {
   .footer .footer-menu .footer-contact {
     width: 95%;
   }
@@ -1177,6 +1159,17 @@ a {
   }
   .footer .footer-menu .footer-contact .footer-nav a {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 681px) {
+  .footer .footer-info .reen {
+    width: 86%;
+  }
+}
+@media screen and (max-width: 671px) {
+  .footer .footer-info .reen {
+    padding: 30px;
+    width: 90%;
   }
 }
 @media screen and (max-width: 614px) {
@@ -1205,6 +1198,30 @@ a {
     margin-top: 0;
   }
 }
+@media screen and (max-width: 610px) {
+  .footer .footer-info .reen {
+    padding: 25px;
+    width: 87%;
+  }
+}
+@media screen and (max-width: 601px) {
+  .footer .footer-info .reen .footer-logo {
+    width: 73%;
+  }
+  .footer .footer-info .reen .footer-latest-works {
+    margin-left: 0;
+    width: 66%;
+    margin-bottom: 15px;
+  }
+  .footer .footer-info .reen .footer-touch {
+    width: 73%;
+    margin-bottom: 15px;
+  }
+  .footer .footer-info .reen .footer-updates {
+    margin-left: 0;
+    width: 73%;
+  }
+}
 @media screen and (max-width: 1047px) {
   .header-find {
     position: absolute;
@@ -1231,6 +1248,11 @@ a {
     clear: both;
   }
 }
+@media screen and (max-width: 472px) {
+  .phone {
+    width: 45%;
+  }
+}
 @media screen and (max-width: 400px) {
   .phone {
     width: 50%;
@@ -1238,5 +1260,18 @@ a {
 
   .icons {
     width: 50%;
+  }
+}
+@media screen and (max-width: 565px) {
+  .icons li {
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 695px) {
+  .menu li {
+    margin-bottom: 10px;
+  }
+  .menu li:last-child {
+    margin-bottom: 0;
   }
 }
