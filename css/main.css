@@ -1089,6 +1089,11 @@ a {
     width: 90%;
   }
 }
+@media screen and (max-width: 582px) {
+  .footer .footer-info .reen .footer-latest-works {
+    width: 54%;
+  }
+}
 @media screen and (max-width: 525px) {
   .footer .footer-info .reen {
     padding: 20px;
@@ -1212,10 +1217,16 @@ a {
   }
 }
 @media screen and (max-width: 886px) {
-  .menu-inner {
+  .header {
+    padding: 0;
+  }
+  .header .header-logo {
+    margin-bottom: 20px;
+  }
+  .header .menu-inner {
     text-align: center;
   }
-  .menu-inner .menu {
+  .header .menu-inner .menu {
     float: none;
     clear: both;
   }

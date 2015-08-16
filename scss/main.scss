@@ -481,10 +481,12 @@ a {
       width: 80%;
       margin: auto;
       padding: 45px;
-      .footer-logo, .footer-latest-works, .footer-touch, .footer-updates {
-        display: inline-block;
-        vertical-align: top;
-        margin-left: 80px;
+    .footer {
+        &-logo, &-latest-works, &-touch, &-updates {
+          display: inline-block;
+          vertical-align: top;
+          margin-left: 80px;
+        }
       }
       .footer-logo {
         margin-left: 0;
@@ -1148,6 +1150,13 @@ a {
     width: 90%;
   }
 }
+@media screen and (max-width: 582px) {
+  .footer .footer-info .reen {
+    .footer-latest-works {
+      width: 54%;
+    }
+  }
+}
 @media screen and (max-width: 525px) {
   .footer .footer-info .reen {
     padding: 20px;
@@ -1292,11 +1301,17 @@ a {
   }
 }
 @media screen and (max-width: 886px) {
-  .menu-inner {
-    text-align: center;
-    .menu {
-      float: none;
-      clear: both;
+  .header {
+    padding: 0;
+    .header-logo {
+      margin-bottom: 20px;
+    }
+    .menu-inner {
+      text-align: center;
+      .menu {
+        float: none;
+        clear: both;
+      }
     }
   }
 }
