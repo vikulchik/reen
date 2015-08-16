@@ -70,8 +70,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .header {
-  padding-bottom: 15px;
-  margin: 0;
+  margin-bottom: 35px;
 }
 
 .contacts {
@@ -90,7 +89,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .phone li {
   list-style: none;
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 20px;
   position: relative;
 }
 .phone .mail:before {
@@ -125,8 +124,11 @@ a {
 }
 .icons li {
   list-style: none;
-  margin-right: 30px;
+  margin-left: 20px;
   display: inline-block;
+}
+.icons li:first-child {
+  margin-left: 0;
 }
 .icons li a {
   width: 9px;
@@ -159,7 +161,6 @@ a {
 .header-logo {
   float: left;
   margin-top: 40px;
-  margin-left: 10px;
   width: 150px;
   height: 40px;
 }
@@ -225,7 +226,6 @@ a {
 
 .main-content {
   min-height: 882px;
-  margin-top: 35px;
   background: url("/img/img-content.jpg") no-repeat 0 0;
   position: relative;
 }
@@ -240,19 +240,21 @@ a {
   color: white;
   font-size: 78px;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 40px;
 }
 .main-content .content p {
   color: #a3b1bf;
   font-size: 24px;
   line-height: 1.5;
-  margin-top: 40px;
+  display: inline-block;
+  margin-bottom: 70px;
 }
 .main-content .content .button {
   display: inline-block;
   color: white;
   font-size: 18px;
   text-transform: uppercase;
-  margin-top: 70px;
   border-radius: 2px;
   border: 1px solid #00bc9c;
   background-color: #00bc9c;
@@ -277,13 +279,13 @@ a {
   margin-top: 131px;
   font-size: 44px;
   color: #506a85;
+  margin-bottom: 35px;
 }
 .content-info .main-info p {
   color: #73879c;
   font-size: 22px;
   line-height: 2;
   display: inline-block;
-  margin-top: 35px;
 }
 .content-info .latest-works {
   width: 70%;
@@ -681,6 +683,15 @@ a {
     width: 54%;
   }
 }
+@media screen and (max-width: 873px) {
+  .content-info .main-info {
+    width: 60%;
+  }
+
+  .information .information-content {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 800px) {
   .content-info .main-info {
     width: 54%;
@@ -690,6 +701,11 @@ a {
   }
   .content-info .main-info p {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 795px) {
+  .content-info .main-info {
+    width: 83%;
   }
 }
 @media screen and (max-width: 676px) {
@@ -703,15 +719,33 @@ a {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 635px) {
+  .content-info .main-info {
+    width: 93%;
+  }
+
+  .information .information-content {
+    width: 86%;
+  }
+}
 @media screen and (max-width: 460px) {
   .content-info .main-info {
-    width: 54%;
+    width: 80%;
   }
   .content-info .main-info h2 {
     font-size: 27px;
+    margin-top: 50px;
   }
   .content-info .main-info p {
     font-size: 15px;
+  }
+
+  .general-info .slogan h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .general-info .slogan p {
+    margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 1368px) {
@@ -1264,7 +1298,7 @@ a {
 }
 @media screen and (max-width: 565px) {
   .icons li {
-    margin-right: 15px;
+    margin-left: 15px;
   }
 }
 @media screen and (max-width: 695px) {
@@ -1273,5 +1307,10 @@ a {
   }
   .menu li:last-child {
     margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 555px) {
+  .header-find {
+    top: 15px;
   }
 }
