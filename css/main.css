@@ -55,7 +55,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*$icons-spacing: 30px;*/
-.icons-sprite, .phone .mail:before, .phone .number:before, .icons .facebook a, .icons .gplus a, .icons .twitter a, .icons .pinterest a, .icons .behance a, .icons .dribbble a, .header-find:after, .content-info .latest-works .content-passion:before, .content-info .latest-works .content-creativity:before, .content-info .latest-works .content-quality:before, .footer .footer-info .reen .footer-logo .data:after, .footer .footer-info .reen .footer-touch .search:before, .footer .footer-info .reen .footer-touch .mobile:before, .footer .footer-info .reen .footer-touch .mailto:before {
+.icons-sprite, .phone .mail:before, .phone .number:before, .icons .facebook a, .icons .gplus a, .icons .twitter a, .icons .pinterest a, .icons .behance a, .icons .dribbble a, .header-search, .content-info .latest-works .content-passion:before, .content-info .latest-works .content-creativity:before, .content-info .latest-works .content-quality:before, .footer .footer-info .reen .footer-logo .data:after, .footer .footer-info .reen .footer-touch .search:before, .footer .footer-info .reen .footer-touch .mobile:before, .footer .footer-info .reen .footer-touch .mailto:before {
   background-image: url('../img/icons-sf7875a0d34.png');
   background-repeat: no-repeat;
 }
@@ -203,16 +203,8 @@ a {
   position: relative;
   margin-top: 55px;
 }
-.header-find .submit {
-  opacity: 0;
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
-}
 
-.header-find:after {
+.header-search {
   content: '';
   display: block;
   width: 12px;
@@ -220,13 +212,14 @@ a {
   background-position: -34px 0;
   position: absolute;
   top: 4px;
-  right: 1px;
+  right: -20px;
   z-index: 0;
+  cursor: pointer;
 }
 
 .main-content {
   min-height: 882px;
-  background: url("/img/img-content.jpg") no-repeat 0 0;
+  background: url("../img/img-content.jpg") no-repeat 0 0;
   position: relative;
 }
 .main-content .content {
@@ -1314,3 +1307,5 @@ a {
     top: 15px;
   }
 }
+
+/*# sourceMappingURL=main.css.map */

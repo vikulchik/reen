@@ -165,19 +165,9 @@ a {
   float: right;
   position: relative;
   margin-top: 55px;
-
-  .submit {
-    opacity: 0;
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-  }
 }
 
-.header-find {
-  &:after {
+.header-search {
     content: '';
     display: block;
     width: 12px;
@@ -185,14 +175,14 @@ a {
     @include icons-sprite(ico-search);
     position: absolute;
     top: 4px;
-    right: 1px;
+    right: -20px;
     z-index: 0;
-  }
+    cursor: pointer;
 }
 
 .main-content {
   min-height: 882px;
-  background: url("/img/img-content.jpg") no-repeat 0 0;
+  background: url("../img/img-content.jpg") no-repeat 0 0;
   position: relative;
 
   .content {

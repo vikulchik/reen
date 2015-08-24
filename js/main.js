@@ -10,7 +10,7 @@ $(document).ready(function(){
     /* input find */
 
     var inputBlock = $('.header-find'),
-        button = inputBlock.find('.submit'),
+        button = inputBlock.find('.header-search'),
         input = inputBlock.find('.input');
 
     button.on('click', function() {

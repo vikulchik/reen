@@ -10,15 +10,15 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
 
 
-
-gulp.task('compass', function() {
-  gulp.src('scss/*.scss')
-    .pipe(compass({
-      config_file: 'config.rb',
-      css: 'css',
-      sass: 'scss'
-    }))
-    .pipe(gulp.dest('css'));
+gulp.task('compass', function () {
+    gulp.src('scss/*.scss')
+        .pipe(compass({
+            config_file: 'config.rb',
+            css: 'css',
+            sass: 'scss',
+            sourcemap: true
+        }))
+        .pipe(gulp.dest('css'));
 });
 
 gulp.task('autpr', function () {
@@ -40,7 +40,6 @@ gulp.task('webserver', function () {
             open: true
         }));
 });
-
 
 
 gulp.task('default', [
